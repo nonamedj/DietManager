@@ -1,0 +1,137 @@
+.root {
+	-fx-base: rgb(50, 50, 50);
+
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+
+	-fx-control-inner-background:  rgb(50, 50, 50);
+}
+
+.button {
+	-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+
+	-fx-font: 24px "Arial";
+	-fx-text-fill:	#ffffff;
+}
+.root-title{
+	-fx-font: 64px "Arial";
+
+	-fx-text-fill:	#ffffff;
+}
+
+.warn{
+	-fx-font: 12px "Arial";
+	-fx-text-fill:	#ffffff;
+}.menu, .menu-item, .context-menu {
+    -fx-background-color: -fx-shadow-highlight-color,
+ -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-text-fill: #ffffff;
+}
+.menu.label
+{
+    -fx-text-fill: #ffffff;
+    -fx-font: 16px "Arial";
+}.registration{
+	-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+.reg-title{
+	 -fx-text-fill: #ffffff;
+
+	 -fx-font: 24px "Arial";
+}
+
+.reg-text{
+	-fx-text-fill: #ffffff;
+
+    -fx-font: 16px "Arial";
+}
+
+.progress-text{
+	-fx-text-fill: #ffffff;
+
+    -fx-font: 12px "Arial";
+}
+
+.combo-box .cell{
+	-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+
+    -fx-text-fill: #ffffff;
+    -fx-font: 16px "Arial";
+}
+
+.reg-button{
+	-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+
+	-fx-text-fill: #ffffff;
+    -fx-font: 16px "Arial";
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #ffffff;
+     -fx-font: 16px "Arial";
+}
+.table-view .table-cell{
+    -fx-text-fill: #ffffff;
+
+    -fx-font: 16px "Arial";
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+
+    -fx-background-insets: 0, 0 0 1 0;
+
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #000000;
+
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.progress-indicator {
+    -fx-progress-color: #ffffff ;
+}
+
+.progress-indicator .percentage {
+    -fx-font-size: 0.916667em;
+ /* 11pt - 1 less than the default font */
+    -fx-fill: #ffffff;
+
+    -fx-font: 16px "Arial";
+}
+
+.add-button{
+	-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+
+	-fx-text-fill: #ffffff;
+
+    -fx-font: 12px "Arial";
+}
+.progress-bar {
+    -fx-progress-color: #000000 ;
+}
+.default-color0.chart-bar { 
+    -fx-bar-fill: #00ff00 
+}
+.default-color1.chart-bar { 
+    -fx-bar-fill: #ffffff 
+}
+.default-color2.chart-bar { 
+    -fx-bar-fill: #ff0000 
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.prt.DietManager.controller.EditUserDataViewController">
+   <center>
+      <GridPane prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="reg-text" text="Vezetéknév" />
+            <Label styleClass="reg-text" text="Keresztnév" GridPane.rowIndex="2" />
+            <Label styleClass="reg-text" text="Kor" GridPane.rowIndex="4" />
+            <Label styleClass="reg-text" text="Magasság" GridPane.rowIndex="6" />
+            <TextField fx:id="lastNameField" GridPane.rowIndex="1" />
+            <TextField fx:id="firstNameField" GridPane.rowIndex="3" />
+            <TextField fx:id="ageField" GridPane.rowIndex="5" />
+            <TextField fx:id="bodyheightField" GridPane.rowIndex="7" />
+            <TextField fx:id="bodyweightField" GridPane.rowIndex="9" />
+            <Label styleClass="reg-text" text="Testsúly" GridPane.rowIndex="8" />
+            <ComboBox fx:id="goalComboBox" prefWidth="200.0" promptText="Cél" styleClass="reg-text" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="1.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="1.0" />
+               </padding></ComboBox>
+            <Button mnemonicParsing="false" onAction="#pressedCancelButton" styleClass="reg-button" text="Mégsem" GridPane.rowIndex="12" />
+            <Button mnemonicParsing="false" onAction="#pressedModifyButton" styleClass="reg-button" text="Módosítás" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="ageErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="nameErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="nameErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="bodyheightErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="bodyweightErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="goalErrorMessage" text="Kötelező megadni!" textFill="RED" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>
